@@ -1,0 +1,405 @@
+
+body {
+	margin:0px;
+	background:linear-gradient(
+      rgba(255, 0, 0, 0.25), 
+      rgba(255, 0, 0, 0.25)
+    ), url(../styles/images/bg2.jpg);
+	background-size : 100% auto;
+}
+
+
+.hdr {
+    width:95%;
+    height:190px;
+    border : 2px red solid;
+    border-radius : 25px;
+    margin-left :  2.5%;
+    background: linear-gradient(
+      rgba(246, 168, 89, 0.75), 
+      rgba(128, 129, 29, 0.75)
+    ),url(../images/717695800.jpg);
+    background-size: cover;    
+}
+
+.hdrlogo {
+    width:12%; 
+    height:auto;
+    float :left;
+    margin-left:10px;
+    margin-top:10px;
+}
+
+.hdrlnk {
+	width : 70%;
+	height : 150px;
+	float : right;
+	text-align:right;        
+}
+
+div.hdrlnk ul{
+	list-style-type:none;
+	margin-top:80px;
+	margin-right:20px;      
+}
+
+
+div.hdrlnk ul li {
+	display:inline-block;
+	background-color: red;
+	color:white;
+	margin-right:20px;
+	font-size : 20pt;
+	border-style:solid;
+	border-color:#be1e2d;
+	border-width:1px;
+	text-align:center;       
+}
+
+div.hdrlnk ul li a:link{
+	background-color:red;
+	color:white;
+	text-decoration:none;
+}
+				  
+div.hdrlnk ul li a:visited{
+	text-decoration:none;
+	background-color:red;
+	color:white;
+}				  
+				  
+div.hdrlnk  ul li a:hover{
+	text-decoration:none;
+	background-color:darkgrey;
+	color:red;
+}
+
+div.hdrlnk ul li a:active{ 
+	background-color:red;
+	color:white;
+	text-decoration:none;
+}
+
+.secintro{
+    width:95%;
+    height:600px;
+    border : 2px red solid;
+    border-radius : 25px;
+    margin-left :  2.5%;
+    background: linear-gradient(
+      rgba(246, 68, 89, 0.75), 
+      rgba(28, 29, 29, 0.75)
+    ),url(../images/restaurant.jpg);
+    background-size:cover;
+    text-align:center;    
+}
+
+.secintro img#img1 {
+    width: 45%;
+    height:auto;
+    float:right;
+    margin: 0px 15px;
+    border-radius:10%;
+}
+
+.secintro p#intro {
+    text-align: justify;
+    margin:15px;
+    font-size:18pt;
+    color:whitesmoke;
+}
+
+.secmenu{
+    width:95%;
+    height:1000px;
+    border : 2px red solid;
+    border-radius : 25px;
+    margin-left :  2.5%;
+    background: linear-gradient(
+      rgba(246, 68, 89, 0.75), 
+      rgba(28, 29, 29, 0.75)
+    ),url(../images/pizzabg.jpg);
+    background-size:cover;
+    text-align:center;
+    font-size:14pt;
+    overflow: auto;
+}
+
+.secmenu h1#menuhdr {
+    width:100%;
+    font-size:300%;
+    text-align:center;
+    color:whitesmoke;
+    margin:0px;
+}
+
+.secmenu h2#menuhdr1{
+    font-size:200%;
+    color:whitesmoke;
+    margin: 0px 50px;;
+    text-align:center;    
+}
+
+.secmenu h2#menuhdr2{
+    font-size:200%;
+    color:whitesmoke;
+    margin: 50px 50px 0px 50px;
+    text-align:center; 
+}
+.secmenu div#pz1{
+    width: 40%;
+    height:170px;
+    margin-left:5%;
+    margin-top:1%;
+    margin-bottom:1%;
+    border:1px solid red;
+    border-radius:10px;
+    float:left;
+    background-color:whitesmoke;
+}
+
+.secmenu div#pz1 img{
+    width: 50%;
+    height:auto;
+    float:right;
+    border-radius:10px;
+    margin-left: 10px;    
+}
+
+.secmenu div#pz2{
+    width: 40%;
+    height:170px;
+    margin-left:10%;
+    margin-top:1%;
+    margin-bottom:1%;
+    border:1px solid red;
+    border-radius:10px;
+    float:left;
+    background-color:whitesmoke;    
+}
+
+.secmenu div#pz2 img{
+    width: 50%;
+    height:auto;
+    float:right;
+    border-radius:10px;
+    margin-left: 10px;    
+}
+
+.secmenu div#pz3{
+    width: 40%;
+    height:170px;
+    margin-left:5%;
+    margin-top:1%;
+    margin-bottom:1%;
+    border:1px solid red;
+    border-radius:10px;
+    float:left;
+    background-color:whitesmoke;
+}
+
+.secmenu div#pz3 img{
+    width: 50%;
+    height:auto;
+    float:right;
+    border-radius:10px;
+    margin-left: 10px;    
+}
+
+.secmenu div#pz4{
+    width: 40%;
+    height:170px;
+    margin-left:10%;
+    margin-top:1%;
+    margin-bottom:1%;
+    border:1px solid red;
+    border-radius:10px;
+    float:left;
+    background-color:whitesmoke;    
+}
+
+.secmenu div#pz4 img{
+    width: 50%;
+    height:auto;
+    float:right;
+    border-radius:10px;
+    margin-left: 10px;    
+}
+
+.secmenu div#pz5{
+    width: 40%;
+    height:170px;
+    margin-left:5%;
+    margin-top:1%;
+    margin-bottom:1%;
+    border:1px solid red;
+    border-radius:10px;
+    float:left;
+    background-color:whitesmoke;
+}
+
+.secmenu div#pz5 img{
+    width: 50%;
+    height:auto;
+    float:right;
+    border-radius:10px;
+    margin-left: 10px;    
+}
+
+.secmenu div#pz6{
+    width: 40%;
+    height:170px;
+    margin-left:10%;
+    margin-top:1%;
+    margin-bottom:1%;
+    border:1px solid red;
+    border-radius:10px;
+    float:left;
+    background-color:whitesmoke;    
+}
+
+.secmenu div#pz6 img{
+    width: 50%;
+    height:auto;
+    float:right;
+    border-radius:10px;
+    margin-left: 10px;    
+}
+
+.secmenu div#pz7{
+    width: 40%;
+    height:170px;
+    margin-left:5%;
+    margin-top:1%;
+    margin-bottom:1%;
+    border:1px solid red;
+    border-radius:10px;
+    float:left;
+    background-color:whitesmoke;
+}
+
+.secmenu div#pz7 img{
+    width: 50%;
+    height:auto;
+    float:right;
+    border-radius:10px;
+    margin-left: 10px;    
+}
+
+.secmenu div#pz8{
+    width: 40%;
+    height:170px;
+    margin-left:10%;
+    margin-top:1%;
+    margin-bottom:1%;
+    border:1px solid red;
+    border-radius:10px;
+    float:left;
+    background-color:whitesmoke;    
+}
+
+.secmenu div#pz8 img{
+    width: 50%;
+    height:auto;
+    float:right;
+    border-radius:10px;
+    margin-left: 10px;    
+}
+
+
+
+
+
+.secloc{
+    width:95%;
+    height:200px;
+    border : 2px red solid;
+    border-radius : 25px;
+    margin-left :  2.5%;
+    background: linear-gradient(
+      rgba(246, 68, 89, 0.75), 
+      rgba(28, 29, 29, 0.75)
+    ),url(../images/hdrbg.jpg);
+    background-size:cover;
+    text-align:center;
+}
+
+.secloc div#tim{
+    width: 40%;
+    height:180px;
+    margin-left:5%;
+    margin-top:0.5%;
+    margin-bottom:0.5%;
+    border:1px solid red;
+    border-radius:25px;
+    float:left;
+    background-color:whitesmoke;
+    font-weight: bold;
+}
+
+.secloc div#addrs{
+    width: 40%;
+    height:180px;
+    margin-left:5%;
+    margin-top:0.5%;
+    margin-bottom:0.5%;
+    border:1px solid red;
+    border-radius:25px;
+    float:left;
+    background-color:whitesmoke;
+    font-weight: bold;
+}
+
+.secfotr{
+    width:95%;
+    height:60px;
+    border : 2px red solid;
+    border-radius : 25px;
+    margin-left :  2.5%;
+    background: black;
+    color:whitesmoke;
+    text-align:center;
+}
+
+.secreg{
+    width:95%;
+    height:600px;
+    border : 2px red solid;
+    border-radius : 25px;
+    margin-left :  2.5%;
+    background: linear-gradient(
+      rgba(246, 68, 89, 0.75), 
+      rgba(28, 29, 29, 0.75)
+    ),url(../images/restaurant.jpg);
+    background-size:cover;
+    font-size: 18pt;
+}
+
+.secord{
+    width:95%;
+    height:600px;
+    border : 2px red solid;
+    border-radius : 25px;
+    margin-left :  2.5%;
+    background: linear-gradient(
+      rgba(246, 68, 89, 0.75), 
+      rgba(28, 29, 29, 0.75)
+    ),url(../images/hdrbg.jpg);
+    background-size:cover;
+    font-size: 18pt;    
+}
+
+.secfea{
+    width:95%;
+    height:600px;
+    border : 2px red solid;
+    border-radius : 25px;
+    margin-left :  2.5%;
+    background: linear-gradient(
+      rgba(246, 68, 89, 0.75), 
+      rgba(28, 29, 29, 0.75)
+    ),url(../images/food-bg.jpg);
+    background-size:cover;
+    font-size: 18pt; 
+}
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Burno's Pizzeria - Order Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles/style.css" type="text/css" rel="stylesheet" />
+        <link rel="icon" href="images/burnopizza.ico" type="image/x-icon">
+        <script src="script/validateordform.js" type="text/javascript"></script>   
+    </head>
+    <body>
+       <header class="hdr">
+            <a href="index.html"><img src="images/burnopizza.png" alt="logo" class="hdrlogo" /></a>
+            <div class="hdrlnk">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="register.html">REGISTRATION</a></li>
+                    <li><a href="order.html" style="background-color:darkgrey;">ORDER</a></li>
+                    <li><a href="features.html">FEATURES</a></li>
+                </ul>
+            </div>
+        </header>
+        <br/><br/>
+        <section class="secord">
+            <h1 style="color:whitesmoke; text-align:center;font-size:200%;width:100%; margin:5px; ">
+                ONLINE ORDER FORM
+            </h1>
+            <br/>
+            <form method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" onSubmit="return checkorder();" style="color:whitesmoke">
+                <label style="float:left;width:27%;height:auto;margin-left:5%">
+                    Pizza Type :
+                    <select id="pizztyp" style="width:100%" onchange="getprice()">
+                        <option value="">Select Your Pizza</option>
+                        <option value="30">3 little pigs</option>
+                        <option value="28">Capricciosa</option>
+                        <option value="32">Funghi</option>
+                        <option value="22">Margherita</option>
+                        <option value="32">Roast Potato</option>
+                        <option value="28">Vegetariana</option>                        
+                    </select>
+                </label>
+                <label style="float:left;width:27%;height:auto;margin-left:5%">
+                    Pizza Price : 
+                    <input type="text" name="pprice" id="pprice" placeholder="Pizza Price" maxlength="20" style="width:100%" disabled />
+                </label>  
+                <label style="float:left;width:27%;height:auto;margin-left:5%">
+                    Delivery Type :
+                    <select id="dlvrytyp" style="width:100%" onchange="setdelivery()">
+                        <option value="">--- Select ---</option>
+                        <option value="delivery">Delivery</option>
+                        <option value="pickup">Pick Up</option>                                               
+                    </select>                    
+                </label>
+                <br/><br/><br/>
+                <label style="float:left;width:60%;height:auto;margin-left:5%">
+                    Delivery Address :
+                    <input type="text" name="dlvryaddrs" id="dlvryaddrs" placeholder="Delivery Address" maxlength="100" style="width:100%" disabled />
+                </label>
+                <label style="float:left;width:27%;height:auto;margin-left:5%; margin-top:2%;">
+                    <input type="checkbox" name="samedlvry" id="samedlvry" onchange="checkdelivery()" />
+                    Same As Delivery Address                    
+                </label>
+                <br/><br/><br/>
+                <label style="float:left;width:90%;height:auto;margin-left:5%">
+                    Billing Address :
+                    <input type="text" name="billaddrs" id="billaddrs" placeholder="Billing Address" maxlength="100" style="width:100%" />
+                </label>
+                <br/><br/><br/>
+                <label style="float:left;width:27%;height:auto;margin-left:5%">
+                    Pay On :
+                    <select id="payon" style="width:100%" onchange="selectpay()" >
+                        <option value="">--- Select ---</option>
+                        <option value="pickup">Pick Up</option>
+                        <option value="online">Online</option>                                               
+                    </select>                    
+                </label>
+                <label style="float:left;width:27%;height:auto;margin-left:5%;display:none" id="ccardlbl">
+                    Credit Card :
+                    <select id="ccard" style="width:100%" onchange="checkccard()" >
+                        <option value="">--- Select ---</option>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Master Card</option>
+                        <option value="americanexp">American Express</option>
+                    </select>                    
+                </label>
+                <label style="float:left;width:27%;height:auto;margin-left:5%;display:none;" id="ccnolbl">
+                    Credit Card Number : 
+                    <input type="text" name="ccno" id="ccno" placeholder="Credit Card Number" style="width:100%" />
+                </label>  
+                <br/><br/><br/><br/>
+                <input type="submit" value="SUBMIT" style="margin-left:40%; width:100px; height:50px;" />
+                <input type="reset" value="CLEAR FORM" style="margin-left:2%; width:100px; height:50px;"  />
+                <br/>
+                <span id="err" style="margin-left:40%; color:red; font-size:16pt;text-align:center;text-transform:uppercase;"></span>
+                
+                
+            </form>
+        </section>
+        <br/><br/>
+        <section class="secloc">
+            <div id="tim">
+                <h2>OPENING HOURS</h2>
+                <p>
+                    Tuesday – Sunday : <br/>
+                    11:30am – 2:30pm & 5:30pm – Late<br/><br/>
+                    Monday – CLOSED
+                </p>                
+            </div>
+            <div id="addrs">
+                <h2>ADDRESS</h2>
+                <p>
+                    BURNO'S PIZZERIA <br/>
+                    123 Smith Street, Melbourne, VIC 3000, Australia
+                </p>
+                <p>Phone : (09)12345678</p>
+                <p>Email : bookings@burnopizzeria.com.au</p>
+            </div>
+        </section>
+        <br/><br/>
+        <section class="secfotr">
+            <h4>&copy; 2023 Burno's Pizzeria</h4>
+        </section> 
+        
+          
+    </body>
+</html>

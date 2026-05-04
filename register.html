@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Burno's Pizzeria - Registration Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles/style.css" type="text/css" rel="stylesheet" />
+        <link rel="icon" href="images/burnopizza.ico" type="image/x-icon">
+        <script type="text/javascript" src="script/validateregform.js"></script>
+    </head>
+    <body>
+        <header class="hdr">
+            <a href="index.html"><img src="images/burnopizza.png" alt="logo" class="hdrlogo" /></a>
+            <div class="hdrlnk">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="register.html" style="background-color:darkgrey;">REGISTRATION</a></li>
+                    <li><a href="order.html">ORDER</a></li>   
+                    <li><a href="features.html">FEATURES</a></li>
+                </ul>
+            </div>
+        </header>
+        <br/><br/>
+        <section class="secreg">
+            <h1 style="color:whitesmoke; text-align:center;font-size:200%;width:100%; margin:5px; ">
+                USER REGISTRATION
+            </h1>
+            <br/>
+            <form id="regfrm" onSubmit="return checkform();" style="color:whitesmoke">
+                <label style="float:left;width:30%;height:auto;margin-left:3%">
+                    First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 
+                    <input type="text" name="fname" id="fname" placeholder="Enter First Name" maxlength="20" style="width:100%" />
+                </label>
+
+                <label style="float:left;width:30%;height:auto;margin-left:2%">
+                    Last Name : 
+                    <input type="text" name="lname" id="lname" placeholder="Enter Last Name" maxlength="20" style="width:100%" />
+                </label>
+
+                <label style="float:left;width:30%;height:auto;margin-left:2%">
+                    Date of Birth : 
+                    <input type="date" name="dob" id="dob" style="width:100%" />
+                </label>
+                <br/><br/><br/>
+                <label style="float:left;width:22%;height:auto;margin-left:3%">
+                    Street Address : 
+                    <input type="text" name="caddrs" id="saddrs" placeholder="Enter Street Address" maxlength="40" style="width:100%" />
+                </label>
+                <label style="float:left;width:22%;height:auto;margin-left:3%">
+                    Suburb/Town : 
+                    <input type="text" name="town" id="town" placeholder="Enter Suburb/Town" maxlength="40" style="width:100%" />
+                    </label>
+                <label style="float:left;width:22%;height:auto;margin-left:3%">
+                    State : 
+                    <input type="text" name="state" id="state" placeholder="Enter State" maxlength="20" style="width:100%" />
+                </label>
+                <label style="float:left;width:18%;height:auto;margin-left:3%">
+                    Post Code : 
+                    <input type="text" name="pcode" id="pcode" placeholder="Enter post code" maxlength="4" pattern="[0-9]{4}" style="width:100%" />
+                </label>
+                <br/><br/><br/>
+                <fieldset style="float:left;width:20%;height:auto;margin-left:3%">
+                    <legend>Gender</legend>
+                    <label>
+                        Male 
+                        <input type="radio" name="gender" id="male" value="male" />
+                    </label>
+                    <label>
+                        Female
+                        <input type="radio" name="gender" id="female" value="female" />
+                    </label>
+                </fieldset>
+                <label style="float:left;width:32%;height:auto;margin-left:3%">
+                    Email Address : 
+                    <input type="text" name="email" id="email" placeholder="Enter email address" style="width:100%" />
+                </label>
+                <label style="float:left;width:32%;height:auto;margin-left:3%">
+                    Phone Number : 
+                    <input type="text" name="phno" id="phno" placeholder="9999999999" pattern="[0-9]{10}" style="width:100%"  />
+                </label>
+                <br/><br/><br/><br/>
+                <label style="float:left;width:45%;height:auto;margin-left:3%">
+                    User Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 
+                    <input type="text" name="usrname" id="usrname" placeholder="Enter User Name" maxlength="50" style="width:100%" />
+                </label>
+
+                <label style="float:left;width:45%;height:auto;margin-left:3%">
+                    Password : 
+                    <input type="password" name="pwd" id="pwd" placeholder="Enter Password" maxlength="50" style="width:100%" />
+                </label>
+                <br/><br/><br/><br/>
+                <input type="submit" value="SUBMIT" style="margin-left:40%; width:100px; height:50px;" />
+                <input type="reset" value="CLEAR FORM" style="margin-left:2%; width:100px; height:50px;"  />
+                <br/>
+                <span id="err" style="margin-left:40%; color:red; font-size:16pt;text-align:center;text-transform:uppercase;"></span>
+                
+            </form>            
+        </section>
+        <br/><br/>
+        <section class="secloc">
+            <div id="tim">
+                <h2>OPENING HOURS</h2>
+                <p>
+                    Tuesday – Sunday : <br/>
+                    11:30am – 2:30pm & 5:30pm – Late<br/><br/>
+                    Monday – CLOSED
+                </p>                
+            </div>
+            <div id="addrs">
+                <h2>ADDRESS</h2>
+                <p>
+                    BURNO'S PIZZERIA <br/>
+                    123 Smith Street, Melbourne, VIC 3000, Australia
+                </p>
+                <p>Phone : (09)12345678</p>
+                <p>Email : bookings@burnopizzeria.com.au</p>
+            </div>
+        </section>
+        <br/><br/>
+        <section class="secfotr">
+            <h4>&copy; 2023 Burno's Pizzeria</h4>
+        </section>
+    </body>
+</html>
